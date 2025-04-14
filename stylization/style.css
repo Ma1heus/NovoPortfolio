@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.candal-regular {
+    font-family: "Candal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-color: #000;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(to left,#98CAB2, #58C2BF, #6295B3, #84C8F0);
+    transition: background-color 1s;
+
+    height: 7vw;
+    border-bottom: .2vw solid rgb(194, 194, 187);
+}
+
+header .menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    margin-right: 2vw;
+}
+
+nav{
+    display: flex;
+
+    margin: 4vw;
+    gap: 10px;
+
+    font-size: 1.8vw;
+    font-family: candal;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color .5s;
+}
+
+nav a:hover {
+    color: #555;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+#home .home-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#home .quote {
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.5;
+    flex: 1;
+
+    margin-right: 60px;
+}
+
+.perfil{
+    width: 40%;
+    height: 50vh;
+    display: block;
+    overflow: hidden;/* Garante que a imagem não ultrapasse o limite */
+    border-radius: 10px;
+
+    border: 1px solid blue;
+}
+
+.perfil img{
+    width: 100%; /* Faz a imagem preencher toda a largura do <picture> */
+    height: 100%; /* Faz a imagem preencher toda a altura do <picture> */
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorção */
+}
+
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 800px) {
+    .responsive-img {
+        width: 50%; /* Imagem ocupa metade da largura */
+    }
+}
+
