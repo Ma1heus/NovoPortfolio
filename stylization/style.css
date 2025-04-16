@@ -18,7 +18,7 @@ body{
 
     height: 100vh;
 
-    background-color: #000;
+    background-color: black;
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -27,7 +27,7 @@ header{
     justify-content: center;
     align-items: center;
 
-    background-image: linear-gradient(to left,#98CAB2, #58C2BF, #6295B3, #84C8F0);
+    background-image: linear-gradient(to left,#58C2BF,#84C8F0, #6295B3);
     transition: background-color 1s;
 
     height: 7vw;
@@ -74,6 +74,22 @@ main{
 
 .hidden {
     display: none;
+}
+
+.nome{
+    color: white;
+    text-decoration: none;
+
+    font-size: 3vw;
+    font-family: candal;
+    margin-bottom: 80px;
+    border-bottom: 1px solid white;
+}
+
+.nome-quote{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
 }
 
 #home .home-content {
