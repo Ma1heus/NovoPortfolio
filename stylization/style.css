@@ -135,3 +135,37 @@ main{
     }
 }
 
+.all-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.bio-content{
+    display: block; /* Altere para block para evitar que o flexbox afete os filhos */
+    text-align: left; /* Garante alinhamento à esquerda */
+
+    padding: 30px;
+    color: #ffffff;
+    font-family: candal;
+    text-decoration: none;
+
+}
+
+.bio-content p{
+    font-size: .7vw;
+    margin-bottom: 20px;
+}
+
+.bio-content h3{
+    color: white;
+    text-decoration: none;
+
+    font-size: 1.3vw;
+    font-family: candal;
+    border-bottom: 1px solid white;
+    display: inline;
+}
+
